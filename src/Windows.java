@@ -29,8 +29,7 @@ public class Windows {
 		B13 = new Button("0"); B14 = new Button("=");
 		B15 = new Button("C"); B16 = new Button("*");
 		
-		TextField T1;
-		T1 = new TextField(10);
+		TextField T1 = new TextField(10);
 		
 		Event1 E1 = new Event1(7, T1);
 		Event2 E2 = new Event2(8, T1);
