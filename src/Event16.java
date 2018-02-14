@@ -2,7 +2,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Event4 implements ActionListener{
+public class Event16 implements ActionListener{
 	
 	TextField box1;
 	char symbol;
@@ -16,7 +16,7 @@ public class Event4 implements ActionListener{
 			Data.counter++;
 			box1.setText(Character.toString(symbol));
 			System.out.println(symbol);
-			Data.operator = 1;
+			Data.operator = 4;
 		}
 		
 		// if first number: set the value of val1
@@ -27,7 +27,7 @@ public class Event4 implements ActionListener{
 
 	}
 	
-	public Event4(char _symbol, TextField _box) {
+	public Event16(char _symbol, TextField _box) {
 		symbol = _symbol;
 		box1 = _box;
 	}

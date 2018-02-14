@@ -2,7 +2,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class Event2 implements ActionListener{
+public class Event10 implements ActionListener{
 	
 	TextField box1;
 	int digit;
@@ -18,7 +18,7 @@ public class Event2 implements ActionListener{
 		}
 	}
 	
-	public Event2(int _digit, TextField _box) {
+	public Event10(int _digit, TextField _box) {
 		digit = _digit;
 		box1 = _box;
 	}

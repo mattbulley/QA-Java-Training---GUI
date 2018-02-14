@@ -4,26 +4,22 @@ import java.awt.event.ActionListener;
 
 public class Event1 implements ActionListener{
 	
-	TextField box1, box2, box3;
+	TextField box1;
+	int digit;
 	
 	public void actionPerformed(ActionEvent x) {
-		int A ,B, C;
-		A=B=C=0;
 		
-		try {
-		A = Integer.parseInt(box1.getText());
-		B = Integer.parseInt(box2.getText());
-		} catch (NumberFormatException ex) {
-			System.out.println("Please insert integers");
+		if(Data.counter == 0) {
+			Data.str += Integer.toString(digit);
+			box1.setText(Data.str);
+		} else if (Data.counter == 1) {
+			Data.str += Integer.toString(digit);
+			box1.setText(Data.str);
 		}
-		
-		C = A+B;
-		box3.setText(Integer.toString(C));
 	}
 	
-	public Event1(TextField A, TextField B, TextField C) {
-		box1 = A;
-		box2 = B;
-		box3 = C;
+	public Event1(int _digit, TextField _box) {
+		digit = _digit;
+		box1 = _box;
 	}
 }
