@@ -10,7 +10,7 @@ import java.awt.GridLayout;
 public class Windows {
 	
 	public static void main(String x[]) {
-		Frame Win = new Frame ("QA Manchester");
+		Frame Win = new Frame ("Integer Calculator");
 		
 		Panel P1 = new Panel();
 		Panel P2 = new Panel();

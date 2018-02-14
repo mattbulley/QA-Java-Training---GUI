@@ -7,8 +7,10 @@ public class Event4 implements ActionListener{
 	TextField box1;
 	char symbol;
 	
+	
 	public void actionPerformed(ActionEvent x) {
 		
+		try {
 		if(Data.counter == 0) {
 			Data.val1 = Integer.parseInt(Data.str);
 			Data.str = "";
@@ -17,6 +19,15 @@ public class Event4 implements ActionListener{
 			box1.setText(Character.toString(symbol));
 			System.out.println(symbol);
 			Data.operator = 1;
+		} else if (Data.counter == 1) {
+			Data.val2 = Integer.parseInt(Data.str);
+			Data.val1 = Data.val1 + Data.val2;
+			Data.str = "";
+			Data.val2 = 0;
+			box1.setText(Integer.toString(Data.val1));
+		}
+		} catch (NumberFormatException ex) {
+			
 		}
 		
 		// if first number: set the value of val1

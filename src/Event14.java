@@ -12,7 +12,7 @@ public class Event14 implements ActionListener {
 		
 		Data.val2 = Integer.parseInt(Data.str);
 		
-		if(Data.counter == 1) {
+		
 			switch (Data.operator) {
 				case 1:
 					answer = Data.val1 + Data.val2;
@@ -35,14 +35,14 @@ public class Event14 implements ActionListener {
 			
 			System.out.println(Data.val2);
 			System.out.println("=");
-			Data.counter = 0;
-			Data.val1 = 0;
+			Data.counter = 1;
+			Data.val1 = (int)answer;
 			Data.val2 = 0;
 			Data.str = "";
 			Data.operator = 0;
 			
 			
-		}
+		
 			
 	}
 	

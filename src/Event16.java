@@ -17,6 +17,12 @@ public class Event16 implements ActionListener{
 			box1.setText(Character.toString(symbol));
 			System.out.println(symbol);
 			Data.operator = 4;
+		} else if (Data.counter == 1) {
+			Data.val2 = Integer.parseInt(Data.str);
+			Data.val1 = Data.val1 * Data.val2;
+			Data.str = "";
+			Data.val2 = 0;
+			box1.setText(Integer.toString(Data.val1));
 		}
 		
 		// if first number: set the value of val1
