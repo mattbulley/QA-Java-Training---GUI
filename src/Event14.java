@@ -35,7 +35,7 @@ public class Event14 implements ActionListener {
 			
 			System.out.println(Data.val2);
 			System.out.println("=");
-			Data.counter = 1;
+			Data.counter = 0;
 			Data.val1 = (int)answer;
 			Data.val2 = 0;
 			Data.str = "";

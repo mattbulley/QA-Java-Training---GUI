@@ -10,7 +10,8 @@ public class Event16 implements ActionListener{
 	public void actionPerformed(ActionEvent x) {
 		
 		if(Data.counter == 0) {
-			Data.val1 = Integer.parseInt(Data.str);
+			if(Data.str != "")
+				Data.val1 = Integer.parseInt(Data.str);
 			Data.str = "";
 			System.out.println(Data.val1);
 			Data.counter++;
@@ -18,7 +19,8 @@ public class Event16 implements ActionListener{
 			System.out.println(symbol);
 			Data.operator = 4;
 		} else if (Data.counter == 1) {
-			Data.val2 = Integer.parseInt(Data.str);
+			if(Data.str != "")
+				Data.val2 = Integer.parseInt(Data.str);
 			Data.val1 = Data.val1 * Data.val2;
 			Data.str = "";
 			Data.val2 = 0;

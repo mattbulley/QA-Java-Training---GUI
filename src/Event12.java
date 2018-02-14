@@ -10,7 +10,8 @@ public class Event12 implements ActionListener{
 	public void actionPerformed(ActionEvent x) {
 		
 		if(Data.counter == 0) {
-			Data.val1 = Integer.parseInt(Data.str);
+			if(Data.str != "")
+				Data.val1 = Integer.parseInt(Data.str);
 			Data.str = "";
 			System.out.println(Data.val1);
 			Data.counter++;
